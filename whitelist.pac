@@ -20,7 +20,7 @@ function FindProxyForURL(url, host)
      *                                                 *
      * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-    var ip_address = '172.16.66.77:3000';
+    var ip_address = 'www.akanitot.com:443 ';
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * 
      *                                                 *
@@ -75,7 +75,20 @@ function FindProxyForURL(url, host)
 
     // custom list. feel free to add.
     // mostly ad servers and img servers
-    if( 
+    if(
+        shExpMatch(host, "(*\.|)evernote.com") ||
+        shExpMatch(host, "(*\.|)workor.com") ||
+        shExpMatch(host, "(*\.|)tower.im") ||
+        shExpMatch(host, "(*\.|)teambition.com") ||
+        shExpMatch(host, "(*\.|)500px.com") ||
+        shExpMatch(host, "(*\.|)dribbble.com") ||
+        shExpMatch(host, "(*\.|)ikeepu.com") ||
+        shExpMatch(host, "(*\.|)wanoujia.com") ||
+        shExpMatch(host, "(*\.|)meizu.com") ||
+        shExpMatch(host, "(*\.|)umeng.com") ||
+        shExpMatch(host, "(*\.|)name.com") ||
+        shExpMatch(host, "(*\.|)yiwanshu.com") ||
+        shExpMatch(host, "(*\.|)ijinshan.com") ||
         shExpMatch(host, "(*\.|)kandian.com") ||
         shExpMatch(host, "(*\.|)homeinns.com") ||
         shExpMatch(host, "(*\.|)sinajs.com") || 
