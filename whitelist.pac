@@ -76,6 +76,12 @@ function FindProxyForURL(url, host)
     // custom list. feel free to add.
     // mostly ad servers and img servers
     if(
+        shExpMatch(host, "(*\.|)ifanr.com") ||
+        shExpMatch(host, "(*\.|)huxiu.com") ||
+        shExpMatch(host, "(*\.|)dgtle.com") ||
+        shExpMatch(host, "(*\.|)pingwest.com") ||
+        shExpMatch(host, "(*\.|)geekpark.net") ||
+        shExpMatch(host, "(*\.|)meile.com") ||
         shExpMatch(host, "(*\.|)evernote.com") ||
         shExpMatch(host, "(*\.|)workor.com") ||
         shExpMatch(host, "(*\.|)tower.im") ||
